@@ -2,9 +2,8 @@
 function passGen() {
     var len = prompt('How long would you like your password to be (8-128)?')
     console.log(typeof len)
-  var isNumber = true
 
-    if(len<8 || len>128 || isNumber) {
+    if(len<8 || len>128) {
       alert('length not valid');
       return passGen();
     };
